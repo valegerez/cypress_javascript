@@ -1,0 +1,10 @@
+# Cypress
+cypress.env.json
+
+#NPM ignores
+node_modules/
+node_modules
+package-lock.json
+
+# Config file
+.env.development.local
