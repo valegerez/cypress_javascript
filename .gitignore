@@ -1,5 +1,6 @@
 # Cypress
 cypress.env.json
+cypress/report/cucumber_report
 
 #NPM ignores
 node_modules/
