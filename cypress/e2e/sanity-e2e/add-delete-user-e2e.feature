@@ -7,27 +7,26 @@ So that I can show my awesome automation skills
   Scenario: Add a user and validate the user has been added to the table
     Given I navigate to teladoc page
     And I click on "Add user" "button"
-    And I enter "ValeTest111" on "First Name" "textbox"
-    And I enter "ValeLastName111" on "Last Name" "textbox"
-    And I enter "UserValeTest111" on "User Name" "textbox"
-    And I enter "test123" on "Password" "textbox"
-    And I select "Sales Team" frpm "Role" "dropdown"
-    And I enter "testvale111@gmail.com" on "Email" "textbox"
-    And I enter "358908089" on "Cell Phone" "textbox"
+    And I fill "First Name" input with value "ValeTest111"
+    And I fill "Last Name" input with value "ValeTestLastName111"
+    And I fill "User Name" input with value "ValeTestUserName111"
+    And I fill "Password" input with value "test123"
+    And I select "Sales Team" option
+    And I fill "Email" input with value "testvale111@gmail.com" 
+    And I fill "Cell Phone" input with value "358908089"
     When I click on "Save" "button"
     Then I should "see" "ValeTest111" on the table
 
-  # Scenario: Delete the user "novak" from the table and validate the user has been deleted
-  #   Given I navigate to teladoc page
-  #   And I click on "Add user" "button"
-  #   And I enter "ValeTest222" on "First Name" "textbox"
-  #   And I enter "ValeLastName222" on "Last Name" "textbox"
-  #   And I enter "UserValeTest222" on "User Name" "textbox"
-  #   And I enter "test1232" on "Password" "textbox"
-  #   And I select "Sales Team" frpm "Role" "dropdown"
-  #   And I enter "testvale222@gmail.com" on "Email" "textbox"
-  #   And I enter "358908088" on "Cell Phone" "textbox"
-  #   And I click on "Save" "button"
-  #   And I click on "Save" "button"
-  #   When I click on "Delete" "button"
-  #   Then I should "not see" "ValeTest222" on the table
+  Scenario: Delete the user "novak" from the table and validate the user has been deleted
+    Given I navigate to teladoc page
+    And I click on "Add user" "button"
+    And I fill "First Name" input with value "ValeTest222"
+    And I fill "Last Name" input with value "ValeTestLastName222"
+    And I fill "User Name" input with value "ValeTestUserName222"
+    And I fill "Password" input with value "test1234"
+    And I select "Sales Team" option
+    And I fill "Email" input with value "testvale222@gmail.com" 
+    And I fill "Cell Phone" input with value "358908088"
+    And I click on "Save" "button"
+    When I click on "Delete" "button"
+    Then I should "not see" "ValeTest222" on the table
