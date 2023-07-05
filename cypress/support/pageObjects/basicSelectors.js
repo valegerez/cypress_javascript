@@ -1,30 +1,36 @@
 class BasicSelectors {
     getAddUserButton() {
-        return cy.get('')
+        return cy.get('button[type=add]')
     }
     getSaveButton() {
-        return cy.get('')
+        return cy.get('button[ng-click="save(user)"]')
     }
     getDeleteButton() {
-        return cy.get('')
+        return cy.get('button .icon-remove').first()
+    }
+    getOkButton() {
+        return cy.get('.btn-primary')
     }
     getFirstNameInput() {
-        return cy.get('')
+        return cy.get('input[name="FirstName"]')
     }
     getLastNameInput() {
-        return cy.get('')
+        return cy.get('input[name="LastName"]')
     }
     getUserNameInput() {
-        return cy.get('')
+        return cy.get('input[name="UserName"]')
     }
     getPasswordInput() {
-        return cy.get('')
+        return cy.get('input[name="Password"]')
     }
     getEmailInput() {
-        return cy.get('')
+        return cy.get('input[name="Email"]')
     }
     getCellPhoneInput() {
-        return cy.get('')
+        return cy.get('input[name="Mobilephone"]')
+    }
+    getRoleDropdown() {
+        return cy.get('select[name="RoleId"]')
     }
 }
 export default BasicSelectors
