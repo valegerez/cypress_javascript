@@ -1,5 +1,5 @@
 import { clickByButtonType, fillByInputType, checkElementBySelector } from '../../helpers/common-helpers-e2e'
-import BasicSelectors from '../../support/pageObjects/basicSelectors'
+import BasicSelectors from '../../pageObjects/basicSelectors'
 const basicSelectors = new BasicSelectors()
 
 Given('I click on {string} {string}', (buttonName) => {

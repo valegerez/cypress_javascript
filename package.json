@@ -20,7 +20,8 @@
   },
   "scripts": {
     "gherkin-lint": "./node_modules/.bin/gherkin-lint -c .gherkin-lintrc.json",
-    "lint": "eslint 'cypress/**/*.js'"
+    "lint": "eslint 'cypress/**/*.js'",
+    "sanity": "./node_modules/.bin/cypress run --spec 'cypress/e2e/sanity/**/*' -e TAGS=\"@SANITY and not @BUG and not @WIP and not @DEPRECATED\""
   },
   "repository": {
     "type": "git",
