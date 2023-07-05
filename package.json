@@ -5,7 +5,11 @@
   "main": "index.js",
   "devDependencies": {
     "cypress": "^10.6.0",
-    "cypress-cucumber-preprocessor": "^4.1.0"
+    "cypress-cucumber-preprocessor": "^4.1.0",
+    "eslint-plugin-cypress": "^2.11.3"
+  },
+  "dependencies": {
+    "gherkin-lint": "^4.2.1"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/step_definitions/",
@@ -15,7 +19,8 @@
     }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gherkin-lint": "./node_modules/.bin/gherkin-lint -c .gherkin-lintrc.json",
+    "lint": "eslint 'cypress/**/*.js'"
   },
   "repository": {
     "type": "git",
