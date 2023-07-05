@@ -1,3 +1,3 @@
-Given('I login on Facebook', () => {
-    cy.visit('https://www.facebook.com/')
+Given('I navigate to teladoc page', () => {
+    cy.visit('https://www.way2automation.com/angularjs-protractor/webtables/')
 })
