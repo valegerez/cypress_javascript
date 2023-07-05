@@ -1,4 +1,5 @@
 {
+  "author": "valeria gerez",
   "name": "package.json",
   "version": "1.0.0",
   "description": "",
@@ -21,16 +22,11 @@
   "scripts": {
     "gherkin-lint": "./node_modules/.bin/gherkin-lint -c .gherkin-lintrc.json",
     "lint": "eslint 'cypress/**/*.js'",
+    "start": "cypress open",
     "sanity": "./node_modules/.bin/cypress run --spec 'cypress/e2e/sanity/**/*' -e TAGS=\"@SANITY and not @BUG and not @WIP and not @DEPRECATED\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/valegerez/valeria_gerez_teladoc_challenge.git"
-  },
-  "author": "valeria gerez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/valegerez/valeria_gerez_teladoc_challenge/issues"
-  },
-  "homepage": "https://github.com/valegerez/valeria_gerez_teladoc_challenge#readme"
+  }
 }
