@@ -8,7 +8,7 @@ export const checkElementBySelector = (condition, selector) => {
 export const clickByButtonType = (buttonName) => {
     let element
     switch (buttonName) {
-        case 'Add user':
+        case 'Add User':
             element = basicSelectors.getAddUserButton()
             break
         case 'Save':
@@ -16,6 +16,9 @@ export const clickByButtonType = (buttonName) => {
             break
         case 'Delete':
             element = basicSelectors.getDeleteButton()
+            break
+        case 'OK':
+            element = basicSelectors.getOkButton()
             break
     }
     element.click({ force: true })
