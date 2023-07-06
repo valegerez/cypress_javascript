@@ -1,4 +1,4 @@
-class BasicSelectors {
+class CommonSelectors {
     getAddUserButton() {
         return cy.get('button[type=add]')
     }
@@ -33,4 +33,4 @@ class BasicSelectors {
         return cy.get('select[name="RoleId"]')
     }
 }
-export default BasicSelectors
+export default CommonSelectors

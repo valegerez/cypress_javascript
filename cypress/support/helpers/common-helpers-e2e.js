@@ -1,24 +1,24 @@
-import BasicSelectors from '../../support/pageObjects/basicSelectors'
-const basicSelectors = new BasicSelectors()
+import CommonSelectors from '../../support/pageObjects/commonSelectors'
+const commonSelectors = new CommonSelectors()
 
-export const checkElementBySelector = (condition, selector) => {
+export const checkElementBySelectorVale = (condition, selector) => {
     condition === 'see' ? selector.should('be.visible') : selector.should('not.exist')
 }
-
+  
 export const clickByButtonType = (buttonName) => {
     let element
     switch (buttonName) {
         case 'Add User':
-            element = basicSelectors.getAddUserButton()
+            element = commonSelectors.getAddUserButton()
             break
         case 'Save':
-            element = basicSelectors.getSaveButton()
+            element = commonSelectors.getSaveButton()
             break
         case 'Delete':
-            element = basicSelectors.getDeleteButton()
+            element = commonSelectors.getDeleteButton()
             break
         case 'OK':
-            element = basicSelectors.getOkButton()
+            element = commonSelectors.getOkButton()
             break
     }
     element.click({ force: true })
@@ -28,22 +28,22 @@ export const fillByInputType = (inputType, text) => {
     let element
     switch (inputType) {
         case 'First Name':
-            element = basicSelectors.getFirstNameInput()
+            element = commonSelectors.getFirstNameInput()
             break
         case 'Last Name':
-            element = basicSelectors.getLastNameInput()
+            element = commonSelectors.getLastNameInput()
             break
         case 'User Name':
-            element = basicSelectors.getUserNameInput()
+            element = commonSelectors.getUserNameInput()
             break
         case 'Password':
-            element = basicSelectors.getPasswordInput()
+            element = commonSelectors.getPasswordInput()
             break
         case 'Email':
-            element = basicSelectors.getEmailInput()
+            element = commonSelectors.getEmailInput()
             break
         case 'Cell Phone':
-            element = basicSelectors.getCellPhoneInput()
+            element = commonSelectors.getCellPhoneInput()
             break
     }
     element.clear().type(text)
