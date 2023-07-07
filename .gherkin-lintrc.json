@@ -2,7 +2,7 @@
     "no-files-without-scenarios" : "on",
     "no-unnamed-features": "on",
     "no-unnamed-scenarios": "on",
-    "allowed-tags": ["on", {"tags": ["@SANITY", "@BUG", "@WIP", "@SMOKE","@DEPRECATED"]}],
+    "allowed-tags": ["on", {"tags": ["@SANITY", "@WIP"]}],
     "scenario-size": ["on", { "steps-length": { "Background": 10, "Scenario": 15 }}],
     "no-partially-commented-tag-lines": "on",
     "no-trailing-spaces": "on",
