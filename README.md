@@ -11,7 +11,7 @@ Create a new file called `cypress.env.json` with the next configuration
 
 ## **2. Install dependencies**
 
-- **Download and install[node](https://nodejs.org/en/download/)**
+- **Download and install [node](https://nodejs.org/en/download/)**
 
 - **Install dependencies**
 ```
