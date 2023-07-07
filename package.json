@@ -7,7 +7,9 @@
   "devDependencies": {
     "cypress": "^10.6.0",
     "cypress-cucumber-preprocessor": "^4.1.0",
-    "eslint-plugin-cypress": "^2.11.3"
+    "eslint-plugin-cypress": "^2.11.3",
+    "cucumber-html-reporter": "^5.4.0",
+    "@types/node": "^20.1.1"
   },
   "dependencies": {
     "gherkin-lint": "^4.2.1"
@@ -23,7 +25,8 @@
     "gherkin-lint": "./node_modules/.bin/gherkin-lint -c .gherkin-lintrc.json",
     "lint": "eslint 'cypress/**/*.js'",
     "start": "cypress open",
-    "sanity": "./node_modules/.bin/cypress run --spec 'cypress/e2e/sanity/**/*' -e TAGS=\"@SANITY and not @BUG and not @WIP\""
+    "sanity": "./node_modules/.bin/cypress run --spec 'cypress/e2e/sanity/**/*' -e TAGS=\"@SANITY and not @BUG and not @WIP\"",
+    "report": "node ./cypress/report/report.js"
   },
   "repository": {
     "type": "git",
