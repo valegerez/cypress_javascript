@@ -30,13 +30,13 @@ npm i
   npm run sanity
   ```
 
-### **Generate and open HTML report**
+## **4. Generate and open HTML report**
 
 ```
 npm run report
 ```
 
-### **Run linter for javascript files and feature files**
+## **5. Run linter for javascript files and feature files**
 
 ```
 npm run lint
