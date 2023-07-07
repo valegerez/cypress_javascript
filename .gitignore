@@ -1,0 +1,13 @@
+# Cypress
+cypress.env.json
+cypress/report/cucumber_report
+cypress/screenshots/
+cypress/videos/ 
+
+#NPM ignores
+node_modules/
+node_modules
+package-lock.json
+
+# Config file
+.env.development.local
