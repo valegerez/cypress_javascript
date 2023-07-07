@@ -10,10 +10,13 @@ Create a new file called `cypress.env.json` with the next configuration
 ```
 
 ## **2. Install dependencies**
+
+- **Download and install[node](https://nodejs.org/en/download/)**
+
+- **Install dependencies**
 ```
 npm i
 ```
-
 
 ## **3. Start cypress and run tests**
 
@@ -22,7 +25,7 @@ npm i
   npm start
   ```
   
-- **Run suites Tests without cypress UI without test with open bugs**
+- **Run test suites from the terminal**
   ```
   npm run sanity
   ```
