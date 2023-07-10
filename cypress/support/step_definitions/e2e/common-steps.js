@@ -1,4 +1,4 @@
-import { clickByButtonType, fillByInputType, checkElementBySelectorVale } from '../../helpers/common-helpers'
+import { clickByButtonType, fillByInputType, checkElementBySelector } from '../../helpers/common-helpers'
 import CommonSelectors from '../../pageObjects/common-selectors'
 const commonSelectors = new CommonSelectors()
 
@@ -19,5 +19,5 @@ Given('I select {string} option', (option) => {
 })
 
 Then('I should {string} {string} on the table', (condition, elementName) => {
-    checkElementBySelectorVale(condition, cy.get('.smart-table td').contains(elementName))
+    checkElementBySelector(condition, cy.get('.smart-table td').contains(elementName))
 })

@@ -1,7 +1,7 @@
 import CommonSelectors from '../pageObjects/common-selectors'
 const commonSelectors = new CommonSelectors()
 
-export const checkElementBySelectorVale = (condition, selector) => {
+export const checkElementBySelector = (condition, selector) => {
     condition === 'see' ? selector.should('be.visible') : selector.should('not.exist')
 }
   
