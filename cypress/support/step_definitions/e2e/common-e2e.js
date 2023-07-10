@@ -19,6 +19,5 @@ Given('I select {string} option', (option) => {
 })
 
 Then('I should {string} {string} on the table', (condition, elementName) => {
-    const tableCellSelector = cy.get('.smart-table td')
-    checkElementBySelectorVale(condition, tableCellSelector.contains(elementName))
+    checkElementBySelectorVale(condition, cy.get('.smart-table td').contains(elementName))
 })

@@ -6,7 +6,7 @@ class CommonSelectors {
         return cy.get('button[ng-click="save(user)"]')
     }
     getDeleteButton() {
-        return cy.get('button .icon-remove').first()
+        return cy.get('button .icon-remove').eq(2)
     }
     getOkButton() {
         return cy.get('.btn-primary')
