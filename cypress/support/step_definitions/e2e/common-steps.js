@@ -1,8 +1,8 @@
-import { clickByButtonType, fillByInputType, checkElementBySelectorVale } from '../../helpers/common-helpers-e2e'
-import CommonSelectors from '../../pageObjects/commonSelectors'
+import { clickByButtonType, fillByInputType, checkElementBySelectorVale } from '../../helpers/common-helpers'
+import CommonSelectors from '../../pageObjects/common-selectors'
 const commonSelectors = new CommonSelectors()
 
-Given('I navigate to teladoc page', () => {
+Given('I navigate to Teladoc page', () => {
     cy.visit(globalUrl)
 })
 

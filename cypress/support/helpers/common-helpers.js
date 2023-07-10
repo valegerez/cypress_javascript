@@ -1,4 +1,4 @@
-import CommonSelectors from '../../support/pageObjects/commonSelectors'
+import CommonSelectors from '../pageObjects/common-selectors'
 const commonSelectors = new CommonSelectors()
 
 export const checkElementBySelectorVale = (condition, selector) => {
