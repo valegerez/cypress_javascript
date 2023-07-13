@@ -5,7 +5,7 @@ I need to automate http://www.way2automation.com/angularjs-protractor/webtables/
 So that I can show my awesome automation skills
 
 Background: Navigate on Page
-    Given I navigate to Teladoc page
+    Given I navigate to page
 
   Scenario: Add a user and validate the user has been added to the table
     And I click on "Add User" "button"
