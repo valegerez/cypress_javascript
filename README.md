@@ -1,11 +1,11 @@
-# valeria_gerez_teladoc_challenge
+# valeria_gerez_cypress_javascript
 
 ## **1. Configure Cypress**
 
 Create a new file called `cypress.env.json` with the next configuration
 ```
 {
-    "URL": "Teladoc url",
+    "URL": " url",
 }
 ```
 
