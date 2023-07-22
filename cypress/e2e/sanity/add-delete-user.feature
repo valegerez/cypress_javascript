@@ -1,8 +1,5 @@
 @SANITY
 Feature: Add and Delete Users
-As an Engr. Candidate
-I need to automate http://www.way2automation.com/angularjs-protractor/webtables/
-So that I can show my awesome automation skills
 
 Background: Navigate on Page
     Given I navigate to page
