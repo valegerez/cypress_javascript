@@ -1,4 +1,4 @@
-# valeria_gerez_cypress_javascript
+# cypress_javascript
 
 ## **1. Configure Cypress**
 
